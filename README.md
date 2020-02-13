@@ -1,7 +1,7 @@
 # hexo-css-merge-script
 A script to merge css files and then minify after generating in hexo.
 
-To use the script just put it inside the following folder
+To use the script just put the ```hexo-css-merge-script.js``` file inside the following folder
 ```
 *your-hexo-project*/themes/scripts
 ```
