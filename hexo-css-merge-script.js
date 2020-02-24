@@ -1,8 +1,17 @@
 var fs = require('hexo-fs');
+var allcontent = '';
 
-var contents = fs.readFileSync('themes\\/*your-theme-name-here*/\\source\\css\\/*css-file-name-here*/.css'); // Fill out the line like shown at the example
-var contents2 = fs.readFileSync('themes\\landscape\\source\\css\\navbar.css'); // Example
-var allcontent = contents + contents2; // Add the files together in the order you would like to have the codes
+var contents = [
+    'themes//*your-theme-name-here*//source/css//*css-file-name-here*/.css', // Fill out the line like shown at the example
+    'themes/test/source/css/global.css', // Example
+    'themes/test/source/css/navbar.css', // Example
+    // Add the lines in the order you would like to have the codes
+];
+
+for (i = 0; i < contents.length; i++) {
+    allcontent = allcontent + fs.readFileSync(contents[i]) + ' ';
+}
+
 
 var CleanCSS = require('clean-css');
 var input = allcontent;
@@ -13,7 +22,7 @@ hexo.extend.generator.register('css-merge', function (locals) {
 
     return {
 
-        path: '/css/main.css', // Merged and minified css file's path and name
+        path: '/css/main.css',
         data: function(){
             return output.styles;
         }
