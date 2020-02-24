@@ -16,16 +16,14 @@ npm install clean-css
 ## Detailed starting info
 Fill out the line like shown at the example
 ```
-var contents = fs.readFileSync('themes\\**your-theme-name-here**\\source\\css\\**css-file-name-here**.css');
+'themes//*your-theme-name-here*//source/css//*css-file-name-here*/.css',
 ```
 Example: 
 ```
-var contents2 = fs.readFileSync('themes\\landscape\\source\\css\\navbar.css');
+'themes/test/source/css/global.css',
 ```
-Add the files together in the order you would like to have the codes
-```
-var allcontent = contents + contents2;
-```
+Add the lines in the order you would like to have the codes
+
 Merged and minified css file's path and name
 ```
 path: '/css/main.css',
