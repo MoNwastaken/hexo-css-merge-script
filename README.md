@@ -2,6 +2,7 @@
 A script to merge css files and then minify after generating in hexo.
 <br/><br/> :exclamation: HEY :exclamation: <br/><br/>
 There is a plugin for the same task as this script. It's easier to use and faster to set up. Check out the hexo-css-merge on [GitHub](https://github.com/MoNwastaken/hexo-css-merge) or on [NPM](https://www.npmjs.com/package/hexo-css-merge)
+<br/><br/>[![NPM](https://nodei.co/npm/hexo-css-merge.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hexo-css-merge/)
 
 ## Quick start
 To use the script just put the `hexo-css-merge-script.js` file inside the following folder
